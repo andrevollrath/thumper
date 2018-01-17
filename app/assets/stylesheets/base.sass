@@ -1,0 +1,67 @@
+/*******************************************************
+ *
+ * SEMANTIC
+ * 
+ *******************************************************
+ */
+
+$import-google-fonts: false
+@import 'semantic-ui'
+
+body
+  text-align: center
+  font-family: 'Caveat', cursive
+  font-size: 2rem   
+  //font-family: 'Sacramento', cursive
+
+
+#background
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-image: image-url("doodles.png")
+  background-repeat: repeat 
+  opacity: 0.5 
+
+.ui.two.column.centered.grid 
+  .column
+    //margin-top: 4rem  
+    text-align: center
+
+    .title
+      font-family: 'Fredoka One', cursive
+      font-size: 5rem
+      text-align: center
+      //background: white
+      padding-top: 4rem 
+      padding-bottom: 4rem   
+      //opacity: 0.85
+
+      span
+        color: #FFD000
+
+    #thump_box
+      border: solid 1px rgba(0,0,0,0.10)
+      background: #FFD000
+      opacity: 0.95
+      padding: 2rem
+      text-align: center          
+      border-radius: 0.28571429rem
+      //box-shadow: 0 2px 4px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)
+      box-shadow: 0 2px 4px rgba(50,50,93,.08), 0 1px 3px rgba(0,0,0,.08)
+
+
+    #thump_box.active:hover
+      //background: #FFD000
+      //color: white
+      //border: solid 1px black
+      cursor: pointer
+      background: repeating-linear-gradient(45deg,white,white 10px,#FFD000 10px,#FFD000 20px)
+
+    #thump_box.active
+      //margin-top: 5rem
+      background: white
+
+
