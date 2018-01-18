@@ -3,7 +3,7 @@ class ThumpsController < ApplicationController
   def index; end
 
   def it
-    sleep(rand(10..30))
+    sleep(rand(2..15))
 
     mech = Mechanize.new {|agent| agent.user_agent_alias = 'Mac Safari'}
     page = mech.get('https://classifieds.castanet.net/details/local_experienced_bookkeeping_team/3341903/')

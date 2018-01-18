@@ -21,7 +21,8 @@ $(document).ready(function() {
   $('#thump_box').on('click', function (e) {
 
     if ($(this).hasClass('active')){
-      var num = Math.floor(Math.random() * (75 - 40 + 1)) + 40;;
+      //var num = Math.floor(Math.random() * (75 - 40 + 1)) + 40;;
+      var num = 300;
 
       $(this).removeClass('active');
       $(this).html('Thumping it <span id="count">0</span> / ' + num);  
